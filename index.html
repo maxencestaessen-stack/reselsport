@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sport Resel — Accueil</title>
+  <meta name="description" content="Sport Resel : achat et revente de maillots de foot authentifiés. Estimation 24h, photos en pièce jointe." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" as="image" href="hero-sm.jpg" media="(max-width: 700px)" />
+  <link rel="preload" as="image" href="hero.jpg" media="(min-width: 701px)" />
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">SPORT <span>RESEL</span></a>
+    <nav>
+      <a class="active" href="index.html">Accueil</a>
+      <a href="#acheter">Boutique</a>
+      <a href="vendre.html">Revendre</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn ghost" href="vendre.html">Vendre</a>
+      <a class="btn" href="#acheter">Shop</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-media" id="heroMedia" aria-hidden="true">
+      <img
+        src="hero-sm.jpg"
+        srcset="hero-sm.jpg 800w, hero.jpg 1400w"
+        sizes="100vw"
+        width="1400" height="933"
+        alt=""
+        fetchpriority="high" />
+    </div>
+    <div class="hero-copy">
+      <p class="kicker reveal">Vestiaire certifié · France</p>
+      <h1 class="reveal delay-1">MAILLOTS.<br>ACHAT.<br>REVENTE.</h1>
+      <p class="lead reveal delay-2">Des pièces de foot authentifiées — domicile, third, rétro, match worn. Tu vends le tien en photos jointes. On check. On propose un prix sous 24h.</p>
+      <div class="hero-actions reveal delay-3">
+        <a class="btn" href="#acheter">Voir le vestiaire</a>
+        <a class="btn ghost" href="vendre.html">Estimer mon maillot</a>
+      </div>
+      <div class="stats reveal delay-4">
+        <div><b id="stockCount">12</b><span>pièces en vitrine</span></div>
+        <div><b>24h</b><span>pour une estimation</span></div>
+        <div><b>0 fake</b><span>en vitrine</span></div>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span class="mouse"></span>
+      Descendre
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>CHECK AUTH</span><span>PHOTOS EN PIÈCE JOINTE</span><span>ESTIMATION 24H</span>
+      <span>0 FAKE EN VITRINE</span><span>RÉTRO · MATCH WORN · FAN</span>
+      <span>CHECK AUTH</span><span>PHOTOS EN PIÈCE JOINTE</span><span>ESTIMATION 24H</span>
+      <span>0 FAKE EN VITRINE</span><span>RÉTRO · MATCH WORN · FAN</span>
+    </div>
+  </div>
+
+  <section class="how">
+    <h2 class="reveal">Comment ça marche</h2>
+    <div class="cats">
+      <div class="cat reveal delay-1"><span class="num">01</span><strong>Tu envoies les photos</strong><small>Recto, verso, étiquette, flocage — en pièces jointes, pas un lien Drive.</small></div>
+      <div class="cat reveal delay-2"><span class="num">02</span><strong>On authentifie</strong><small>Coupe, codes saison, print, provenance. Si ça coince, la pièce ne passe pas.</small></div>
+      <div class="cat reveal delay-3"><span class="num">03</span><strong>Prix sous 24h</strong><small>Offre ferme. Tu acceptes, tu expédies. On paie après réception.</small></div>
+      <div class="cat reveal delay-4"><span class="num">04</span><strong>La vitrine tourne</strong><small>Les arrivages changent d’ordre à chaque visite. Comme un vrai vestiaire.</small></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="reveal">Le rayon</h2>
+    <div class="cats">
+      <div class="cat reveal delay-1"><span class="num">FOOT</span><strong>Clubs &amp; sélections</strong><small>Ligue 1, Premier League, Liga, Serie A, internationaux.</small></div>
+      <div class="cat reveal delay-2"><span class="num">90S</span><strong>Rétro collector</strong><small>Cotton, templates cultes, flocages d’époque.</small></div>
+      <div class="cat reveal delay-3"><span class="num">MW</span><strong>Match worn</strong><small>Porté en jeu, traces assumées, provenance exigée.</small></div>
+      <div class="cat reveal delay-4"><span class="num">+</span><strong>Pièces à part</strong><small>Gardiens, thirds bizarres, samples, dédicaces prouvées.</small></div>
+    </div>
+    <div class="mood">
+      <figure class="mood-card reveal from-left">
+        <img src="pile-sm.jpg" srcset="pile-sm.jpg 640w, pile.jpg 1200w" sizes="(max-width: 900px) 90vw, 55vw" width="1200" height="800" alt="Sélections nationales sur cintres" loading="lazy" decoding="async" />
+        <figcaption>Arrivages · sélections sur rail</figcaption>
+      </figure>
+      <figure class="mood-card reveal from-right delay-2">
+        <img src="retro-sm.jpg" srcset="retro-sm.jpg 640w, retro.jpg 1200w" sizes="(max-width: 900px) 90vw, 40vw" width="1200" height="800" alt="Maillots rétro accrochés au vestiaire" loading="lazy" decoding="async" />
+        <figcaption>Rétro · vestiaire collector</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="acheter">
+    <h2 class="reveal">Le vestiaire</h2>
+    <p class="lead reveal delay-1">12 maillots de foot en rotation. L’ordre change à chaque visite — comme un arrivage qui vient d’être pendu.</p>
+    <div class="products" id="vestiaire"></div>
+  </section>
+
+  <section id="faq">
+    <h2 class="reveal">FAQ</h2>
+
+    <details class="reveal" open>
+      <summary>Les photos changent à chaque visite ?</summary>
+      <p>Oui. Le vestiaire mélange les 12 pièces au hasard dès que tu ouvres la page. Ce n’est pas un stock qui « saute » : ce sont les mêmes maillots, juste réaccrochés dans un autre ordre. L’idée, c’est de retrouver le réflexe du vrai shop — tu ne tombes pas toujours sur la même case en premier. Un rafraîchissement suffit pour tout remélanger. Rien n’est stocké sur ton ordi : le tirage se refait à chaque chargement.</p>
+    </details>
+
+    <details class="reveal">
+      <summary>Je peux déjà vendre ?</summary>
+      <p>Oui, tout de suite. Tu vas sur <a href="vendre.html">Revendre</a>, tu remplis prénom, mail, club, saison, taille, état, et tu glisses tes photos dans la zone de pièces jointes. Pas besoin d’envoyer le maillot pour avoir un prix. L’estimation part par mail, en général sous 24h (souvent le soir même en semaine). Si l’offre te va, on t’envoie le protocole d’expédition. Si elle ne te va pas, tu gardes la pièce, aucun frais, aucun engagement. On n’estime pas « pour la forme » : si la pièce est hors rayon ou clairement fake, on te le dit clairement plutôt que de te faire perdre un colis.</p>
+    </details>
+
+    <details class="reveal">
+      <summary>Quelles photos faut-il envoyer ?</summary>
+      <p>Le minimum utile, c’est quatre clichés nets, en lumière du jour, maillot à plat ou sur cintre, pas de filtre Instagram :</p>
+      <p>1) Face entière, bien cadré, badges lisibles.<br>2) Dos entier (flocage, numéro, publicité dorsale s’il y en a).<br>3) Étiquette col + éventuel code année / hologramme / size tag intérieur.<br>4) Gros plan flocage ou écusson.</p>
+      <p>Si tu as un défaut — trou d’accroche, tache d’herbe, print qui craque, couture ouverte, col déformé — ajoute un 5ᵉ gros plan. Pour un match worn, photographie aussi les traces de jeu (manches, bas de maillot). Pour une dédicace, la signature doit être nette, pas un flou de 3 pixels. Sans étiquette visible, le check auth est plus long, parfois impossible : on te demandera alors d’autres angles plutôt que d’inventer une authenticité.</p>
+    </details>
+
+    <details class="reveal">
+      <summary>Vous prenez les replicas ?</summary>
+      <p>Non. Sport Resel ne met en vitrine que des pièces que l’on considère authentiques après check. Ça exclut : Thai quality, « player version » marketplace à 18 €, prints off-centre, badges thermocollés trop brillants, étiquettes fantaisistes, maillots « very similar ». On refuse aussi les pièces dont la provenance est trop floue (lot non sourcé, story contradictoire). L’estimation reste gratuite : tu n’es pas facturé pour un refus. On préfère te le dire tout de suite plutôt que de recycler un fake dans le vestiaire. C’est le seul argument du shop — 0 fake en vitrine — et on ne le brade pas.</p>
+    </details>
+
+    <details class="reveal">
+      <summary>Comment vous authentifiez ?</summary>
+      <p>On croise plusieurs couches, jamais une seule photo « ça a l’air bon » :</p>
+      <p>— Étiquette : police, composition, year code, hologramme selon les ères (90s ≠ 2010 ≠ 2024).<br>— Coupe : fan vs player issue (aisselles, longueur de corps, col).<br>— Print : flocage flock / heat-press / stitched, alignement des numéros, type de sponsor de la saison.<br>— Textile : gramme, maille, banding des années 90, climacool / aeroready plus tardifs.<br>— Références : catalogues, photos vestiaire, bases collector.</p>
+      <p>Match worn / player issue : on demande un maximum de preuves (certificat, photo du maillot dans le vestiaire, message d’un staff, ticket, article). Si le doute reste après ça, la pièce ne passe pas. Un « on verra bien à la réception » n’est pas une méthode — le doute se règle avant l’envoi, ou on décline.</p>
+    </details>
+
+    <details class="reveal">
+      <summary>Comment est calculé le prix de rachat ?</summary>
+      <p>Cinq leviers, dans cet ordre à peu près : club / sélection, saison (un 98 ou un 06 ne se comporte pas comme un 24/25 grand public), rareté réelle (pas « rare selon le groupe Facebook »), état physique, et demande du moment. Un rétro 90s neuf avec étiquette se valorise presque toujours mieux qu’un maillot récent porté deux saisons. Un third bizarre en XS peut valoir plus qu’un domicile M trop courant. L’offre que tu reçois est ferme pour 7 jours : tu acceptes, tu déclines, ou tu poses une question. On ne « teste » pas un prix pour voir si tu lâches. Si le marché bouge vraiment (sortie d’un documentaire, retraite d’un joueur, finale), on peut réestimer — mais seulement si tu le redemandes.</p>
+    </details>
+
+    <details class="reveal">
+      <summary>Vous prenez une commission ?</summary>
+      <p>Le prix annoncé est le montant que tu touches, net, par virement. On ne te sort pas une ligne « frais de dossier 12 % » après coup. Sport Resel se rémunère à la revente, pas sur ton dos au moment du rachat. Les seuls frais qui restent à ta charge côté vendeur : l’expédition jusqu’à chez nous (suivi obligatoire). De l’autre côté, l’acheteur paie le maillot + le port annoncé avant validation. Pas de surprise ni pour toi ni pour lui. Si on doit te renvoyer la pièce (elle ne correspond pas), les frais retour sont précisés dans le mail de refus — en général à ta charge si l’écart vient des photos, à la nôtre si on s’est trompés.</p>
+    </details>
+
+    <details class="reveal">
+      <summary>Comment se passe l’envoi si je vends ?</summary>
+      <p>Quand tu acceptes l’offre, tu reçois un protocole court : adresse, délai d’envoi (en général 5 jours), et la façon de protéger le textile. On veut un maillot plié à plat, dans une pochette ou entre deux cartons, jamais en boule dans un sac plastique. Colis suivi obligatoire — photo du bordereau avant dépôt, c’est notre preuve à tous les deux. À l’arrivée on recoupe tes photos : mêmes défauts, même flocage, même étiquette. Si ça correspond, validation et paiement. Si ça ne correspond pas (état sous-évalué, pièce différente, odeur moisi non déclarée), on te le renvoie et l’offre tombe. On ne « négocie minus » en sneak : soit ça match, soit ça rentre chez toi.</p>
+    </details>
+
+    <details class="reveal">
+      <summary>Quand et comment suis-je payé ?</summary>
+      <p>Après réception physique + check auth. Pas avant. Virement SEPA sur IBAN FR, sous 48h ouvrées une fois la pièce validée. Week-end et jours fériés glissent au premier ouvré. On te demande le RIB au moment où tu acceptes l’offre, pas dans le premier formulaire — ça évite de circuler un IBAN pour une estimation que tu vas peut-être refuser. Pas de PayPal « amis », pas de crypto, pas de cash en main propre : le virement laisse une trace des deux côtés, c’est voulu. Si un virement coince (mauvais IBAN), on te prévient le jour même, on ne laisse pas pourrir.</p>
+    </details>
+
+    <details class="reveal">
+      <summary>Vous livrez où si j’achète ?</summary>
+      <p>France métropolitaine en colis suivi, délai habituel 48–72h après expédition. Corse, DOM-TOM et Europe : on calcule le port avant que tu valides, tu n’as pas de surprise à la caisse. Pas de point relais imposé, pas de retrait boutique pour l’instant — tout part en colis, le vestiaire n’est pas un local d’accueil. Un numéro de suivi part dès que le maillot quitte chez nous. Si le transporteur affiche « livré » et que tu n’as rien, tu as 48h pour nous écrire : on ouvre le litige avec le bordereau, on ne te laisse pas seul face à un avis de passage fantôme.</p>
+    </details>
+
+    <details class="reveal">
+      <summary>Les tailles correspondent aux neufs d’aujourd’hui ?</summary>
+      <p>Souvent non, et c’est là que les retours naissent. Les rétro 90s et early 00s taillent plus petit, parfois d’une taille entière, surtout les coupes européennes coton / polyester fin. Un « L 1996 » n’est pas un L 2025 oversize. Quand on a les mesures (aisselle à aisselle, longueur dos, largeur épaules), on les met sur la fiche. Quand on ne les a pas encore, on l’écrit : « taille étiquette seulement ». En doute, tu écris avant d’acheter plutôt que de jouer au pile ou face. Les versions joueur (player issue) sont encore plus étroites. Les maillots enfant floqués légende restent en taille enfant : on ne les vend pas comme un S adulte.</p>
+    </details>
+
+    <details class="reveal">
+      <summary>Puis-je retourner un maillot acheté ?</summary>
+      <p>Oui, 14 jours après réception, si la pièce n’a pas été portée, lavée, parfumée, ni coupée. L’étiquette de vente Sport Resel doit encore être là. Tu nous préviens par mail, on t’envoie l’adresse retour, tu expédies en suivi. Remboursement du maillot une fois le colis contrôlé — le port aller n’est pas repris, sauf erreur de notre part (mauvaise référence, défaut non photographié). Exceptions : match worn, pièces uniques et lots marqués « vente ferme » — pas de rétractation, sauf si on s’est trompés sur la description. C’est écrit sur la fiche avant l’achat, pas après.</p>
+    </details>
+
+    <details class="reveal">
+      <summary>Match worn, player issue, fan : ça veut dire quoi ?</summary>
+      <p><strong>Fan / replica boutique authentique</strong> : la version vendue en club shop. Coupe loisir, souvent plus large. Ce n’est pas un fake : c’est simplement pas la version joueur.</p>
+      <p><strong>Player issue</strong> : coupe pro, heat-press, parfois un col ou une maille différente. Elle peut n’avoir jamais vu un terrain. Sans certif, on authentifie la coupe, on n’invente pas le nom du titulaire.</p>
+      <p><strong>Match issued</strong> : préparée pour un match (numéro, patch), non portée ou portée zéro minute.</p>
+      <p><strong>Match worn</strong> : portée en jeu. Traces possibles (herbe, friction, numéro qui lève). Un match worn n’est jamais « comme neuf » — si on te vend du porté comme du mint, c’est qu’on s’est plantés, et tu as le droit de le dire.</p>
+    </details>
+
+    <details class="reveal">
+      <summary>Vous prenez aussi d’autres sports ?</summary>
+      <p>Le cœur du vestiaire, c’est le foot : clubs, sélections, rétro 90s–00s, gardiens, thirds. On regarde au cas par cas le basket (NBA / Euroleague) et, plus rarement, un rugby, une combi F1 ou un textile moto si la pièce est claire et sourcée. Envoie les photos quand même. Si ce n’est pas notre rayon, on te le dit dans la journée, sans te faire tourner. On ne « diversifie » pas pour remplir des cases vides avec n’importe quel polyester.</p>
+    </details>
+
+    <details class="reveal">
+      <summary>Combien de temps pour une réponse ?</summary>
+      <p>Estimation : sous 24h ouvrées, souvent le soir même si le dossier est complet (photos nettes + taille + état). Un week-end, un jour férié ou un lot de 8 maillots peut glisser d’un jour — on prévient plutôt que de laisser le mail pourrir. Paiement après réception : 48h ouvrées. Relance : si tu n’as rien à H+36, réécris avec l’objet d’origine, on retrouve le fil. On ne laisse pas une estimation en rade parce que le flocage était flou : dans ce cas on te redemande deux photos, le délai repart au moment où elles arrivent.</p>
+    </details>
+  </section>
+
+  <footer>
+    <span>SPORT RESEL · maillots authentifiés</span>
+    <span><a href="vendre.html">Revendre un maillot</a></span>
+  </footer>
+  <div class="mobile-cta">
+    <a class="btn ghost full" href="vendre.html">Vendre</a>
+    <a class="btn full" href="#acheter">Shop</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

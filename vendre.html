@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sport Resel — Revendre un maillot</title>
+  <meta name="description" content="Fais estimer ton maillot : photos en pièce jointe, check auth, prix sous 24h." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-sell">
+  <header>
+    <a class="brand" href="index.html">SPORT <span>RESEL</span></a>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="index.html#acheter">Boutique</a>
+      <a class="active" href="vendre.html">Revendre</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn ghost" href="index.html">Accueil</a>
+      <a class="btn" href="#form">Estimer</a>
+    </div>
+  </header>
+
+  <section class="hero sell-hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="pile-sm.jpg" srcset="pile-sm.jpg 640w, pile.jpg 1200w" sizes="100vw" alt="" />
+    </div>
+    <div class="hero-copy">
+      <p class="kicker reveal">Revente · estimation 24h</p>
+      <h1 class="reveal delay-1">VENDS TON<br>MAILLOT.</h1>
+      <p class="lead reveal delay-2">Quatre photos en pièces jointes. On check l’auth. Tu reçois un prix ferme. Les replicas restent à la maison.</p>
+      <div class="hero-actions reveal delay-3">
+        <a class="btn" href="#form">Lancer l’estimation</a>
+        <a class="btn ghost" href="#protocole">Voir le protocole</a>
+      </div>
+      <div class="stats reveal delay-4">
+        <div><b>4</b><span>photos mini</span></div>
+        <div><b>24h</b><span>pour le prix</span></div>
+        <div><b>0 €</b><span>si tu refuses</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>RECTO · VERSO · ÉTIQUETTE · FLOCAGE</span>
+      <span>PAS DE FAKE</span>
+      <span>OFFRE FERME 7 JOURS</span>
+      <span>PAIEMENT APRÈS RÉCEPTION</span>
+      <span>RECTO · VERSO · ÉTIQUETTE · FLOCAGE</span>
+      <span>PAS DE FAKE</span>
+      <span>OFFRE FERME 7 JOURS</span>
+      <span>PAIEMENT APRÈS RÉCEPTION</span>
+    </div>
+  </div>
+
+  <section id="protocole">
+    <h2 class="reveal">Le protocole</h2>
+    <ol class="timeline">
+      <li class="reveal delay-1"><b>01 — Photos</b><span>Recto, verso, étiquette, flocage. Gros plan sur tout ce qui cloche : couture, badge, tache, numéro de travers.</span></li>
+      <li class="reveal delay-2"><b>02 — Fiche</b><span>Taille, état, type de pièce. Match worn, dédicace, third bizarre : tu le notes dans le message.</span></li>
+      <li class="reveal delay-3"><b>03 — Check</b><span>Réponse sous 24h. Pièce unique : jusqu’à 48h. On peut demander une 5ᵉ photo (col intérieur, year code).</span></li>
+      <li class="reveal delay-4"><b>04 — Deal</b><span>Prix ferme 7 jours. Tu acceptes → colis suivi, plié à plat. On paie après validation.</span></li>
+      <li class="reveal delay-1"><b>05 — Dédicace</b><span>Signature nette + preuve (certif, story vestiaire). Sans preuve, on valorise le textile, pas l’autographe.</span></li>
+      <li class="reveal delay-2"><b>06 — Match worn</b><span>Traces de jeu OK si tu les déclares. Un « neuf » qui sent le match : on recalibre.</span></li>
+    </ol>
+  </section>
+
+  <section id="form">
+    <div class="sell-grid">
+      <div class="sell-aside reveal from-left">
+        <h2>Demande d’estimation</h2>
+        <p class="lead">Le formulaire part sur notre mail avec tes photos attachées. Pas de Drive, pas de WhatsApp obligatoire.</p>
+        <ul class="sell-points">
+          <li>8 photos max · 8 Mo chacune</li>
+          <li>JPG ou PNG, lumière du jour</li>
+          <li>Réponse sur l’e-mail que tu indiques</li>
+          <li>Aucun envoi du maillot avant le prix</li>
+        </ul>
+      </div>
+
+      <div class="box sell-form reveal from-right delay-2">
+        <form id="estimate-form" name="estimation" action="/" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" enctype="multipart/form-data">
+          <input type="hidden" name="form-name" value="estimation" />
+          <input type="hidden" name="subject" value="Sport Resel — estimation maillot" />
+          <p class="hp"><label>Ne pas remplir <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+
+          <div class="fields">
+            <label>Prénom
+              <input type="text" name="nom" placeholder="Alex" required />
+            </label>
+            <label>Ton e-mail
+              <input type="email" name="email" placeholder="alex@mail.fr" required />
+            </label>
+            <label>Club / équipe
+              <input type="text" name="club" placeholder="OM, Brésil, Milan…" required />
+            </label>
+            <label>Saison
+              <input type="text" name="saison" placeholder="ex. 98/99 ou 24/25" />
+            </label>
+            <label>Taille
+              <select name="taille" required>
+                <option value="">Choisir</option>
+                <option>XS</option><option>S</option><option>M</option><option>L</option>
+                <option>XL</option><option>XXL</option><option>XXXL</option>
+                <option>Enfant / junior</option><option>Taille unique</option>
+              </select>
+            </label>
+            <label>État
+              <select name="etat" required>
+                <option value="">Choisir</option>
+                <option>Neuf avec étiquette</option>
+                <option>Neuf sans étiquette</option>
+                <option>Comme neuf (jamais porté)</option>
+                <option>Très bon état</option>
+                <option>Bon état (porté, propre)</option>
+                <option>État correct (petites traces)</option>
+                <option>Porté / usé (visible)</option>
+                <option>Collector / match worn</option>
+                <option>Défaut à préciser</option>
+              </select>
+            </label>
+          </div>
+
+          <label>Type de pièce
+            <select name="type_piece">
+              <option value="">Standard / je ne sais pas</option>
+              <option>Fan / replica boutique authentique</option>
+              <option>Player issue / version joueur</option>
+              <option>Match worn — porté en jeu</option>
+              <option>Match issued — préparé, non porté</option>
+              <option>Dédicacé</option>
+              <option>Maillot de gardien</option>
+              <option>Third / fourth insolite</option>
+              <option>Warm-up / training / pre-match</option>
+              <option>Édition limitée / anniversary</option>
+              <option>Prototype / sample staff</option>
+              <option>Maillot de chaud / manches longues 90s</option>
+              <option>Enfant floqué légende</option>
+            </select>
+          </label>
+
+          <label class="dropzone" id="dropzone">
+            <input id="photos" type="file" name="photos" accept="image/*" multiple />
+            <div class="dropzone-inner">
+              <strong>Pièces jointes — photos du maillot</strong>
+              Clique ou glisse tes images ici
+            </div>
+            <div class="previews" id="previews"></div>
+          </label>
+          <p class="file-note">JPG ou PNG · recto, verso, étiquette, flocage · 8 fichiers max · 8 Mo. Hébergé par Netlify Forms.</p>
+
+          <label>Lien vers tes photos (Drive, iCloud, WeTransfer)
+            <input type="url" name="lien_photos" placeholder="https://drive.google.com/…" />
+          </label>
+
+          <label>Précisions
+            <textarea name="message" rows="4" placeholder="Flocage, défauts, histoire de la pièce, mesures si tu les as…"></textarea>
+          </label>
+
+          <p id="form-success" class="form-msg ok" hidden>Demande envoyée. Vérifie ta boîte — et la nôtre. Réponse sous 24h.</p>
+          <p id="form-error" class="form-msg err" hidden></p>
+          <button class="btn" type="submit" id="form-submit">Demander mon prix</button>
+          <p class="file-note">En envoyant, tu acceptes qu’on te réponde sur cet e-mail. Pas de newsletter.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="special">
+    <h2 class="reveal">Pièces spéciales &amp; insolites</h2>
+    <p class="lead reveal delay-1">On n’achète pas que le domicile 24/25. Les dossiers un peu tordus, on les ouvre.</p>
+    <div class="cats">
+      <div class="cat reveal delay-1"><span class="num">MW</span><strong>Match worn</strong><small>Herbe, sueur, numéro décollé : oui, si la provenance tient.</small></div>
+      <div class="cat reveal delay-2"><span class="num">PI</span><strong>Player issue</strong><small>Coupe joueur. Sans certif on valide la coupe, pas le nom du titulaire.</small></div>
+      <div class="cat reveal delay-3"><span class="num">XX</span><strong>Thirds bizarres</strong><small>Camo, or, fourth oublié. Plus c’est laid/rare, plus ça nous parle.</small></div>
+      <div class="cat reveal delay-4"><span class="num">GK</span><strong>Gardiens 90s</strong><small>Justaucorps, pads, templates Uhlsport. Souvent plus rares que le 10.</small></div>
+      <div class="cat reveal delay-1"><span class="num">©</span><strong>Dédicaces</strong><small>Le textile d’abord. L’autographe seulement avec preuve.</small></div>
+      <div class="cat reveal delay-2"><span class="num">00</span><strong>Samples &amp; staff</strong><small>Prototype, specimen, heat-test. Photo de l’intérieur col obligatoire.</small></div>
+      <div class="cat reveal delay-3"><span class="num">90</span><strong>Rétro tordu</strong><small>Tournoi de Noël, maillot de chaud, amateur floqué. On regarde.</small></div>
+      <div class="cat reveal delay-4"><span class="num">!</span><strong>On refuse</strong><small>Thai quality, Temu « player version », pièce volée, grenier moisi.</small></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="reveal">FAQ revente</h2>
+    <details class="reveal" open>
+      <summary>Vous prenez les faux ?</summary>
+      <p>Non. Replica Thai, player version marketplace, print off : refus. L’estimation reste gratuite, on te le dit clairement.</p>
+    </details>
+    <details class="reveal">
+      <summary>Je dois envoyer le maillot tout de suite ?</summary>
+      <p>Non. D’abord les photos. L’envoi seulement si tu acceptes le prix. Colis suivi, plié à plat, pas en boule.</p>
+    </details>
+    <details class="reveal">
+      <summary>Pourquoi des pièces jointes plutôt qu’un lien ?</summary>
+      <p>Elles arrivent dans le même mail que ta fiche. Pas besoin d’ouvrir WeTransfer. Si un fichier est trop lourd, on te redemandera un lien Drive.</p>
+    </details>
+    <details class="reveal">
+      <summary>Comment je suis payé ?</summary>
+      <p>Virement SEPA après réception et check. 48h ouvrées. Le prix annoncé est ce que tu touches — pas de commission surprise.</p>
+    </details>
+  </section>
+
+  <footer>
+    <span>SPORT RESEL · Revendre</span>
+    <span><a href="index.html">Retour accueil</a></span>
+  </footer>
+  <div class="mobile-cta">
+    <a class="btn ghost full" href="index.html">Accueil</a>
+    <a class="btn full" href="#form">Estimer</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

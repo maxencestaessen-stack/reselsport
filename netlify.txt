@@ -1,0 +1,28 @@
+SPORT RESEL — Recevoir les estimations via Netlify Forms
+========================================================
+
+Le formulaire de vendre.html est branché sur Netlify Forms
+(nom : estimation). Photos en pièces jointes incluses.
+
+1. Compte gratuit : https://app.netlify.com
+2. Add new site → Deploy manually
+   Glisse TOUT le dossier boutique/ (index.html doit être
+   à la racine de ce que tu déposes).
+3. Après le premier deploy :
+   Site → Project configuration → Forms
+   → Form detection = ON  puis Redeploy (Deploys → Trigger deploy)
+4. Forms → Notifications → Add notification
+   Type = Email notification
+   Ton adresse mail
+   Form = estimation
+   Confirme le mail que Netlify t’envoie.
+5. Test UNIQUEMENT sur l’URL Netlify
+   (https://ton-site.netlify.app/vendre.html)
+   Pas en double-clic sur le fichier.
+6. Résultat :
+   - bandeau vert sur la page
+   - ligne dans Forms → Submissions (photos cliquables)
+   - mail dans ta boîte (regarde les spams)
+
+Honeypot anti-bot : champ bot-field (caché).
+Objet du mail : Sport Resel — estimation maillot

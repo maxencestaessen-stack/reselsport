@@ -1,0 +1,2 @@
+Formspree n’est plus utilisé.
+Les demandes passent par Netlify Forms — voir NETLIFY.txt
